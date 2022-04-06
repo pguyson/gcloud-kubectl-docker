@@ -17,4 +17,5 @@ tasks. So it contains
 - cfssljson
 
 You can find the resulting docker image at https://hub.docker.com/r/pguyson/gcloud-kubectl-docker
+
 thanks claranet for based docker.
