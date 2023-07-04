@@ -1,8 +1,8 @@
 FROM google/cloud-sdk:alpine
 
-ARG KUBE_BINARY_URL="https://dl.k8s.io/release/v1.23.0/bin/linux/amd64"
+ARG KUBE_BINARY_URL="https://dl.k8s.io/release/v1.27.3/bin/linux/amd64"
 
-LABEL version="1.5.2"
+LABEL version="1.5.3"
 RUN apk add --update py-pip
 RUN apk add --no-cache \
     bash \
@@ -35,6 +35,9 @@ RUN curl -sSL https://raw.githubusercontent.com/kubernetes/helm/master/scripts/g
 
 # configure gcloud git helper for CSR usage
 RUN git config --global credential.helper gcloud.sh
+
+# 
+RUN gcloud components install gke-gcloud-auth-plugin
 
 # Install cfssl and cfssljson
 RUN curl -sSL https://pkg.cfssl.org/R1.2/cfssl_linux-amd64 > /usr/bin/cfssl \

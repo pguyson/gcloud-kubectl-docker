@@ -1,3 +1,8 @@
+# 1.5.3 - 2023-07-04
+
+- [fix] chagned kubectl version to 1.27.3
+- [fix] upgraded google cloud sdk to latest
+
 # 1.5.2 - 2022-04-06
 
 - [fix] changed kubectl version to 1.23.0

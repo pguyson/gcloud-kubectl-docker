@@ -1,4 +1,4 @@
-Current version: **1.5.2**
+Current version: **1.5.3**
 
 Provides a collection of tools to easily do CI/CD for/in kubernetes related
 tasks. So it contains
